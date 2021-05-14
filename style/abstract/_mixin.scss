@@ -1,0 +1,43 @@
+$small: 375;
+$medium: 768;
+$large: 1024;
+$xLarge: 1440;
+
+@mixin small {
+  @media only screen and (min-width: $small * 1px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: $medium * 1px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large * 1px) {
+    @content;
+  }
+}
+
+@mixin xLarge {
+  @media only screen and (min-width: $xLarge * 1px) {
+    @content;
+  }
+}
+
+$length: 10.33vh;
+$tbLength: 5vh;
+
+@mixin contentPad {
+  padding: $tbLength $length;
+}
+
+@mixin contentLtPad {
+  padding-left: $length;
+}
+
+@mixin contentRtPad {
+  padding-right: $length;
+}

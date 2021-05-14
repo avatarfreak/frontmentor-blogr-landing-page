@@ -1,0 +1,31 @@
+:root {
+  --ratio: 1.272;
+}
+
+html {
+  font-size: clamp(16px, calc(0.75vw + 57%), 18px);
+}
+
+h4,
+p {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: calc(1rem * var(--ratio));
+}
+
+h2 {
+  font-size: calc(1rem * var(--ratio) * var(--ratio));
+}
+
+h1 {
+  font-size: calc(1rem * var(--ratio) * var(--ratio) * var(--ratio));
+}
+
+h5 {
+  font-size: calc(1rem / var(--ratio));
+}
+h6 {
+  font-size: calc(1rem / var(--ratio) / var(--ratio));
+}
