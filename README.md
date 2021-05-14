@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/avatarfreak/three-column-preview-card.git](https://github.com/avatarfreak/three-column-preview-card.git)
-- Live Site URL: [https://github.com/avatarfreak/three-column-preview-card/](https://github.com/avatarfreak/three-column-preview-card/)
+- Solution URL: [https://github.com/avatarfreak/frontmentor-blogr-landing-page](https://github.com/avatarfreak/frontmentor-blogr-landing-page)
+- Live Site URL: [https://avatarfreak.github.io/frontmentor-blogr-landing-page/](https://avatarfreak.github.io/frontmentor-blogr-landing-page/)
 
 ## My process
 
