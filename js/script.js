@@ -18,11 +18,23 @@ const showMenu = (handle, nav) => {
 };
 
 const showSubMenu = (items) => {
-  items.forEach((item) => {
+  const ids = [];
+
+  items.forEach((item, idx) => {
     const parent = item.parentElement;
     const arrowUp = parent.querySelector("img");
 
+    //keep track of item
+    ids.push(idx);
+
     parent.addEventListener("click", (evt) => {
+      ids.filter((id) => {
+        if (id !== idx) {
+          items[id].classList.remove("fold");
+          items[id].parentElement.querySelector("img").classList.remove("rotate");
+        }
+      });
+
       item.classList.toggle("fold");
       arrowUp.classList.toggle("rotate");
     });
@@ -30,5 +42,4 @@ const showSubMenu = (items) => {
 };
 
 showSubMenu(submenu);
-
 showMenu(hamMenu, nav);
